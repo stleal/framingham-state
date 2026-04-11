@@ -1,0 +1,14 @@
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\bin\Debug\net10.0\IntQueueApp.exe
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\bin\Debug\net10.0\IntQueueApp.deps.json
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\bin\Debug\net10.0\IntQueueApp.runtimeconfig.json
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\bin\Debug\net10.0\IntQueueApp.dll
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\bin\Debug\net10.0\IntQueueApp.pdb
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.AssemblyInfoInputs.cache
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.AssemblyInfo.cs
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.csproj.CoreCompileInputs.cache
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.dll
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\refint\IntQueueApp.dll
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.pdb
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\IntQueueApp.genruntimeconfig.cache
+c:\Users\LealS\OneDrive\fRAMily\Documents\Git\Repos\STLEAL\Hawks\ADTs\IntQueueApp\obj\Debug\net10.0\ref\IntQueueApp.dll
