@@ -1,9 +1,9 @@
 public class BTNode
 {
-  public BTNode left;
-  public BTNode right;
-  public object value;
-  public BTNode parent;
+  public BTNode? left;
+  public BTNode? right;
+  public object? value;
+  public BTNode? parent;
 
   public BTNode()
   {
@@ -21,12 +21,30 @@ public class BTNode
     parent = null;
   }
 
-  public BTNode GetLeft() => left;
-  public void SetLeft(object o) => left = new BTNode(o);
-  public BTNode GetRight() => right;
-  public void SetRight(object o) => right = new BTNode(o);
-  public BTNode GetParent() => parent;
-  public void SetParent(BTNode n) => parent = n;
+  public override string ToString()
+  {
+    return value?.ToString() ?? string.Empty;
+  }
+
+  public BTNode? GetLeft() => left;
+  public void SetLeft(object o) => SetLeft(new BTNode(o));
+  public void SetLeft(BTNode? n)
+  {
+    left = n;
+    if (n != null)
+      n.parent = this;
+  }
+  public BTNode? GetRight() => right;
+  public void SetRight(object o) => SetRight(new BTNode(o));
+  public void SetRight(BTNode? n)
+  {
+    right = n;
+    if (n != null)
+      n.parent = this;
+  }
+  public BTNode? GetParent() => parent;
+  public void SetParent(BTNode? n) => parent = n;
+  public object? GetValue() => value;
   public bool IsLeaf()
   {
     return (left == null) && (right == null);

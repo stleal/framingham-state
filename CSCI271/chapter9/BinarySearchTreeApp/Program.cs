@@ -10,5 +10,6 @@
       objs[i] = s[i];
     }
     t = new Tree(objs);
+    t.Print();
   }
 }
