@@ -18,35 +18,19 @@ public class Tree
 
   public void CreateTree(object[] objs)
   {
+    BTNode child = new BTNode();
+    BTNode parent = new BTNode();
     data = new BTNode[objs.Length];
-    for (int i = 0; i < objs.Length-1; i++)
+    for (int i = 1; i < objs.Length-1; i+=2)
     {
-      BTNode root = new BTNode(objs[i/2]);
-      if (i == 0)
-        data[0] = root;
-      BTNode child = new BTNode(objs[2*i/2]);
+      data[i/2] = new BTNode(objs[i/2]);
+      parent = data[i/2];
+      child = new BTNode(objs[2*i/2]);
         data[i] = child;
-      root.SetLeft(child);
+      parent.SetLeft(child);
       child = new BTNode(objs[2*(i+1)/2]);
         data[i+1] = child;
-      root.SetRight(child);
-    }
-  }
-
-  public void CreateTree(string s)
-  {
-    data = new BTNode[s.Length];
-    for (int i = 0; i < s.Length-1; i++)
-    {
-      BTNode root = new BTNode(s[i/2]);
-      if (i == 0)
-        data[0] = root;
-      BTNode child = new BTNode(s[2*i/2]);
-        data[i] = child;
-      root.SetLeft(child);
-      child = new BTNode(s[2*(i+1)/2]);
-        data[i+1] = child;
-      root.SetRight(child);
+      parent.SetRight(child);
     }
   }
 }
