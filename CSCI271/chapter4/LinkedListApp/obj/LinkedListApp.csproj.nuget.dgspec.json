@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\ADTs\\LinkedListApp\\LinkedListApp.csproj": {}
+    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\ADTs\\LinkedListApp\\LinkedListApp.csproj": {
+    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\ADTs\\LinkedListApp\\LinkedListApp.csproj",
+        "projectUniqueName": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
         "projectName": "LinkedListApp",
-        "projectPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\ADTs\\LinkedListApp\\LinkedListApp.csproj",
+        "projectPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
         "packagesPath": "C:\\Users\\LealS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\ADTs\\LinkedListApp\\obj\\",
+        "outputPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
