@@ -9,6 +9,8 @@ public class BTNode
   {
     left = null;
     right = null;
+    value = null;
+    parent = null;
   }
 
   public BTNode(object o)
@@ -16,6 +18,7 @@ public class BTNode
     value = o;
     left = null;
     right = null;
+    parent = null;
   }
 
   public BTNode GetLeft() => left;
