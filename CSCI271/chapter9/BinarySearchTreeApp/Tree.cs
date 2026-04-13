@@ -19,23 +19,49 @@ public class Tree
 
   public void Print()
   {
-    if (root == null)
-      return;
-
-    Queue<BTNode> nodes = new Queue<BTNode>();
-    nodes.Enqueue(root);
-
-    while (nodes.Count > 0)
+    var depth = 0;
+    var height = GetHeight();
+    while (depth < height)
     {
-      BTNode current = nodes.Dequeue();
-      Console.WriteLine(current.GetValue());
-
-      if (current.GetLeft() != null)
-        nodes.Enqueue(current.GetLeft()!);
-
-      if (current.GetRight() != null)
-        nodes.Enqueue(current.GetRight()!);
+      var count = (int)Math.Pow(2, depth);
+      var startIndex = (int)Math.Pow(2, depth)-1;
+      var endIndex = startIndex + count;
+      BTNode current = data[startIndex];
+      for (int i = startIndex; i <= endIndex-1; i++)
+      {
+        Console.Write(current.GetValue());
+        if (i < data.Length-1)
+          current = data[i+1];
+        if (i >= data.Length-1)
+          break;
+      }
+      depth++;
     }
+  }
+
+  public List<LinkedList> CreateListOfDepths()
+  {
+    var depth = 0;
+    var height = GetHeight();
+    List<LinkedList> lists = new List<LinkedList>();
+    while (depth < height)
+    {
+      lists.Add(new LinkedList());
+      var count = (int)Math.Pow(2, depth);
+      var startIndex = (int)Math.Pow(2, depth)-1;
+      var endIndex = startIndex + count;
+      BTNode current = data[startIndex];
+      for (int i = startIndex; i <= endIndex-1; i++)
+      {
+        lists[depth].Insert(current.GetValue()!);
+        if (i < data.Length-1)
+          current = data[i+1];
+        if (i >= data.Length-1)
+          break;
+      }
+      depth++;
+    }
+    return lists;
   }
 
   public int GetHeight()

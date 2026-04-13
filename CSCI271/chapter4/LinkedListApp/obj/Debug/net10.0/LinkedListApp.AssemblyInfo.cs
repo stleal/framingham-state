@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinkedListApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b7b041fe0b3291d081f144ac5bcc1b9c91c4e03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c384a7e7feba80133a1738dbb5a3a24d2ca4b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinkedListApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinkedListApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

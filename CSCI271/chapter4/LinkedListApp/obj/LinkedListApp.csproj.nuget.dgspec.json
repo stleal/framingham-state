@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {}
+    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {
+    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
+        "projectUniqueName": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
         "projectName": "LinkedListApp",
-        "projectPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
+        "projectPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\LinkedListApp.csproj",
         "packagesPath": "C:\\Users\\LealS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\obj\\",
+        "outputPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter4\\LinkedListApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
