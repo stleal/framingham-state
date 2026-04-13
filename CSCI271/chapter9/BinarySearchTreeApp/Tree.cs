@@ -17,26 +17,17 @@ public class Tree
 
   public BTNode? GetRoot() => root;
 
-  public void Print()
+  public int GetHeight()
   {
-    var depth = 0;
-    var height = GetHeight();
-    while (depth < height)
+    var height = 0;
+    var count = 0;
+    var counter = 0;
+    while (count < data.Length)
     {
-      var count = (int)Math.Pow(2, depth);
-      var startIndex = (int)Math.Pow(2, depth)-1;
-      var endIndex = startIndex + count;
-      BTNode current = data[startIndex];
-      for (int i = startIndex; i <= endIndex-1; i++)
-      {
-        Console.Write(current.GetValue());
-        if (i < data.Length-1)
-          current = data[i+1];
-        if (i >= data.Length-1)
-          break;
-      }
-      depth++;
+      count = (int)Math.Pow(2, counter++);
+      height++;
     }
+    return height-1;
   }
 
   public List<LinkedList> CreateListOfDepths()
@@ -64,46 +55,44 @@ public class Tree
     return lists;
   }
 
-  public int GetHeight()
+  public void Print()
   {
-    var height = 0;
-    var count = 0;
-    var counter = 0;
-    while (count < data.Length)
+    var depth = 0;
+    var height = GetHeight();
+    while (depth < height)
     {
-      count = (int)Math.Pow(2, counter++);
-      height++;
+      var count = (int)Math.Pow(2, depth);
+      var startIndex = (int)Math.Pow(2, depth)-1;
+      var endIndex = startIndex + count;
+      BTNode current = data[startIndex];
+      for (int i = startIndex; i <= endIndex-1; i++)
+      {
+        Console.Write(current.GetValue());
+        if (i < data.Length-1)
+          current = data[i+1];
+        if (i >= data.Length-1)
+          break;
+      }
+      depth++;
     }
-    return height-1;
   }
 
   public void CreateTree(object[] objs)
   {
-    if (objs == null || objs.Length == 0)
-    {
-      data = Array.Empty<BTNode>();
-      root = null;
-      return;
-    }
-
     data = new BTNode[objs.Length];
-    for (int i = 0; i < objs.Length; i++)
+    for (int i = 0; i < data.Length; i++)
     {
       data[i] = new BTNode(objs[i]);
     }
-
     for (int i = 0; i < objs.Length; i++)
     {
-      int leftIndex = (2 * i) + 1;
-      int rightIndex = leftIndex + 1;
-
-      if (leftIndex < objs.Length)
+      var leftIndex = 2*i+1;
+      var rightIndex = leftIndex + 1;
+      if (leftIndex < data.Length)
         data[i].SetLeft(data[leftIndex]);
-
-      if (rightIndex < objs.Length)
+      if (rightIndex < data.Length)
         data[i].SetRight(data[rightIndex]);
     }
-
     root = data[0];
   }
 }

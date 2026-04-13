@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj": {}
+    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj": {}
   },
   "projects": {
-    "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj": {
+    "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj",
+        "projectUniqueName": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj",
         "projectName": "chapter9",
-        "projectPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj",
+        "projectPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\chapter9.csproj",
         "packagesPath": "C:\\Users\\LealS\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\obj\\",
+        "outputPath": "C:\\Users\\LealS\\OneDrive\\fRAMily\\Documents\\Git\\Repos\\STLEAL\\Hawks\\framingham-state\\CSCI271\\chapter9\\BinarySearchTreeApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
