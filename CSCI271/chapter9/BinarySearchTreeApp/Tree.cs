@@ -2,6 +2,7 @@ public class Tree
 {
   public BTNode? root;
   public BTNode[] data;
+  public int count;
 
   public Tree()
   {
@@ -12,6 +13,7 @@ public class Tree
   public Tree(object[] objs)
   {
     data = Array.Empty<BTNode>();
+    count = 0;
     CreateTree(objs);
   }
 
@@ -27,7 +29,7 @@ public class Tree
       count = (int)Math.Pow(2, counter++);
       height++;
     }
-    return height-1;
+    return (count == data.Length) ? height : height-1;
   }
 
   public List<LinkedList> CreateListOfDepths()
@@ -55,6 +57,43 @@ public class Tree
     return lists;
   }
 
+  public int GetIndexOfFirstEmptyNode()
+  {
+    // search through the existing tree looking for the first null left or right child
+    var leftIndex = 0;
+    var parent = root;
+    for (int i = 0; i < data.Length; i++)
+    {
+      if (i > 0)
+        parent = (i % 2 == 0) ? data[(i/2)-1] : data[(i/2)];
+      leftIndex = 2*i;
+      if (parent!.GetLeft()!.GetValue() == null)
+        return i;
+      if (parent.GetRight()!.GetValue() == null)
+        return leftIndex;
+    }
+    return -1;
+  }
+
+  public void Insert(object o)
+  {
+    var index = GetIndexOfFirstEmptyNode();
+    var parentIndex = (index % 2 == 0) ? (index/2)-1 : (index/2);
+    // resize the tree by copying the data into a tree with +1 depth/height
+    if (index != -1)
+    {
+      // child index
+      data[index] = new BTNode(o);
+      // parent index
+      BTNode parent = data[parentIndex];
+      if (index % 2 == 1)
+        parent.SetLeft(data[index]);
+      if (index % 2 == 0)
+        parent.SetRight(data[index]);
+      count++;
+    }
+  }
+
   public void Print()
   {
     var depth = 0;
@@ -67,7 +106,7 @@ public class Tree
       BTNode current = data[startIndex];
       for (int i = startIndex; i <= endIndex-1; i++)
       {
-        Console.Write(current.GetValue());
+        Console.Write(current.GetValue() + " ");
         if (i < data.Length-1)
           current = data[i+1];
         if (i >= data.Length-1)
@@ -75,6 +114,7 @@ public class Tree
       }
       depth++;
     }
+    Console.WriteLine();
   }
 
   public void CreateTree(object[] objs)
@@ -83,6 +123,7 @@ public class Tree
     for (int i = 0; i < data.Length; i++)
     {
       data[i] = new BTNode(objs[i]);
+      count++;
     }
     for (int i = 0; i < objs.Length; i++)
     {
