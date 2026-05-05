@@ -13,7 +13,7 @@
     }
     tree.CreateTree(nums);
     tree.Print();
-    //tree.Insert(16);
+    tree.Insert(16);
     tree.Print();
     for (int i = 0; i < 32; i++)
     {
