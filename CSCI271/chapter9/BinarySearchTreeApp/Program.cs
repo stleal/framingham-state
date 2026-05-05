@@ -2,30 +2,42 @@
 {
   public static void Main(string[] args)
   {
-    Tree t = new Tree();
+    Tree tree = new Tree();
     List<LinkedList> lists = new List<LinkedList>();
     string s = "ALGORITHMS ARE FUN";
-    object[] objs = new object[s.Length];
+    object[] objs = new object[32];
     object[] nums = new object[16];
     for (int i = 0; i < nums.Length-1; i++)
     {
       nums[i] = i+1;
     }
-    t.CreateTree(nums);
-    t.Print();
-    t.Insert(16);
-    t.Print();
-    for (int i = 0; i < s.Length; i++)
+    tree.CreateTree(nums);
+    tree.Print();
+    //tree.Insert(16);
+    tree.Print();
+    for (int i = 0; i < 32; i++)
     {
-      objs[i] = s[i];
+      if (i <= s.Length-1)
+      {
+        objs[i] = s[i];
+      }
+      else
+      {
+        break;
+      }
     }
-    t = new Tree(objs);
-    t.Print();
-    lists = t.CreateListOfDepths();
+    tree = new Tree(objs);
+    tree.Print();
+    lists = tree.CreateListOfDepths();
     foreach (var list in lists)
     {
       Console.Write("List of Depth " + lists.IndexOf(list) + ": ");
       list.Print();
     }
+    tree.Insert(" ");
+    tree.Insert("X");
+    tree.Insert("Y");
+    tree.Insert("Z");
+    tree.Print();
   }
 }

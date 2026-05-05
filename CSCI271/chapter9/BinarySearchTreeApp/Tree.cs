@@ -60,17 +60,15 @@ public class Tree
   public int GetIndexOfFirstEmptyNode()
   {
     // search through the existing tree looking for the first null left or right child
-    var leftIndex = 0;
     var parent = root;
     for (int i = 0; i < data.Length; i++)
     {
       if (i > 0)
         parent = (i % 2 == 0) ? data[(i/2)-1] : data[(i/2)];
-      leftIndex = 2*i;
       if (parent!.GetLeft()!.GetValue() == null)
         return i;
       if (parent.GetRight()!.GetValue() == null)
-        return leftIndex;
+        return i+1;
     }
     return -1;
   }
